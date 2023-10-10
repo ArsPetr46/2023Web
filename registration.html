@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/registration.css"/>
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta property="og:title" content="Mobile VPN"/>
+    <meta property="og:type" content="Website"/>
+    <meta property="og:url" content="#"/>
+    <meta property="og:image" content="img/favicon.ico"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <img src="img/App_Image.jpg" alt="Mobile VPN App">
+        <nav id="header_nav">
+            <a href="index.html">Main page</a>
+            <a href="shop.html">Prices</a>
+            <a href="#footer">Contact us</a>
+            <a href="login.html">Login</a>
+            <a href="registration.html">Register</a>
+        </nav>
+    </header>
+
+    <main>
+        <form action="index.html" method="POST">
+            <h2>Registration</h2>
+            <div class="form_block">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div>
+                    <label for="surname">Surname:</label>
+                    <input type="text" id="surname" name="surname" placeholder="Your Surname" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Create Password" required>
+                </div>
+            </div>
+
+            <div class="form_block">
+                <div>
+                    <label for="birth_date">Birth Date:</label>
+                    <input type="date" id="birth_date" name="birth_date">
+                </div>
+                <div>
+                    <label for="country">Your Country:</label>
+                    <select id="country" name="country">
+                        <option style="display:none" disabled selected value> Select Your Country </option>
+                        <option value="us">United States</option>
+                        <option value="ca">Canada</option>
+                        <option value="mx">Mexico</option>
+                        <option value="ua">Ukraine</option>
+                        <option value="de">Germany</option>
+                        <option value="fr">France</option>
+                        <option value="it">Italy</option>
+                        <option value="uk">United Kingdom</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="optional_block" class="form_block">
+                <h4>Optional questions</h4>
+
+                <div id="os_quest">
+                    <label>Your Operating System:</label> 
+                
+                    <div id="radio_div">
+                        <div>
+                            <label for="ios">IOS:</label>
+                            <input class="radio" type="radio" id="ios" name="os" value="ios">
+                        </div>
+                        
+                        <div>
+                            <label for="android">Android:</label>
+                            <input class="radio" type="radio" id="android" name="os" value="android">
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="question_div">
+                    <label for="opt1">How did you find out about our app?</label>
+                    <textarea id="opt1" name="opt1"></textarea>
+                </div>
+                    
+                <div class="question_div">
+                    <label for="opt2">Which subscription would you choose?</label>
+                    <textarea id="opt2" name="opt2"></textarea>
+                </div>
+            </div>
+
+            <div id="questions" class="form_block">
+                <div>
+                    <label for="send_news">Allow to send news on Email:</label>
+                    <input class="checkbox" type="checkbox" id="send_news" name="send_news" checked>
+                </div>
+                <div>
+                    <label for="agree_with_policy">I agree with the policy:</label>
+                    <input class="checkbox" type="checkbox" id="agree_with_policy" name="agree_with_policy" required>
+                </div>
+            </div>
+
+            <div id="buttons">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+
+    </main>
+
+    <footer id="footer">
+        <div id="footer_info">
+            <div id="footer_contacts">
+                <p>Contact us:</p>
+                <p>Address: 222 Mobile Development Street, Los Angeles</p>
+                <p>Mail: BestMobileVPN@gmail.com</p>
+                <p>Phone: +123 456 78 90</p>
+            </div>
+            <div>
+                <img src="img/App_Image.jpg" alt="Website Logo">
+            </div>
+            
+        </div>
+        <div id="footer_copyright">
+            &copy; 2023 Mobile VPN App. All rights reserved.
+        </div>
+    </footer>
+</body>
+
+</html>

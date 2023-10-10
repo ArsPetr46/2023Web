@@ -1,0 +1,36 @@
+footer {
+    background-color: #92b4ff;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'Roboto', sans-serif;
+}
+
+#footer_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#footer_contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    
+}
+
+#footer_contacts p {
+    font-size: 12px;
+    margin: 5px;
+    color: rgb(70, 70, 70);
+}
+
+#footer_copyright {
+    font-size: 12px;
+    margin-bottom: 20px;
+    color: rgb(70, 70, 70);
+}
